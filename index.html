@@ -9,7 +9,7 @@
         <meta content="Pryto" property="og:title"/>
         <meta content="Pryto's Epic site" property="og:description"/>
         <meta content="https://zpryto.github.io/" property="og:url"/>
-        <meta content="#fc0303" data-react-helmet="true" name="theme-color"/>
+        <meta content="#404040" data-react-helmet="true" name="theme-color"/>
     </head>
     
     <div class="holder"></div>
@@ -36,7 +36,7 @@
             <svg height="60px" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#191717" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5  c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1  c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4  c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7  c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5  c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"/>
             </svg>
-            <a class = 'soundbutton' href="https://github.com/zpryto" target="_blank">zPryto</a>
+            <a class = 'pbutton' href="https://github.com/zpryto" target="_blank">zPryto</a>
         </div>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
@@ -47,7 +47,7 @@
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
         <div style="margin-top: 20px; margin-bottom: 20px;"></div>
-        <a class="soundbutton" href='https://ko-fi.com/pryto' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' alt='Buy Me a Coffee at ko-fi.com' /></a>
+        <a class="pbutton" href='https://ko-fi.com/pryto' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' alt='Buy Me a Coffee at ko-fi.com' /></a>
     </div>
 
     <div style="margin-top: 5vh; margin-bottom: 10px;"></div>
@@ -66,8 +66,8 @@
             Credit to Kevin Macleod who made cool music.</p>
         <iframe id="cleaningfrenzygame" src="" height="750" width="1000" allowfullscreen="true" src="html/Cleaning_Frenzy_Empty.html" loading="eager"></iframe>
         <div style="display: flex;">
-            <button id="cleaningfrenzybutton" class="soundbutton" onclick="cleaningfrenzy()">Start Game</button>
-            <button id="cleaningfrenzyfullscreen" class="soundbutton" onclick="cleaningfrenzyfullscreen()">Full Screen</button>
+            <button id="cleaningfrenzyplay" class="pbutton" onclick="cleaningfrenzy()">Start Game</button>
+            <button id="cleaningfrenzyfullscreen" class="pbutton" onclick="cleaningfrenzyfullscreen()">Full Screen</button>
         </div>
         <br>
         <br>
@@ -81,12 +81,25 @@
         <p> </p>
     </div>
 
+    <div style="margin-top: 5vh; margin-bottom: 10px;"></div>
+
+    <div id="wrapper">
+        <h1>Commission</h1>
+        <hr class='divider'></hr>
+        <br>
+        <video width="300px" height="170px" style="align-self: center; display: block;" controls>
+            <source src="videos/nope.mp4" type="video/mp4">
+            <h2>no.</h2>
+        </video>
+        <br>
+    </div>
+
     <div style="margin-top: 100vh; margin-bottom: 100px;"></div>
 
     <p>There is nothing secret here. What do you expect?</p>
-    <button onclick="toTop()" id="top" class = 'soundbutton' title="Return to the beginning.">Top</button>
+    <button onclick="toTop()" id="top" class = 'pbutton' title="Return to the beginning.">Top</button>
     <audio src="sounds/hl2_hover.mp3"></audio>
     <audio src="sounds/spawn.mp3"></audio>
 </html>
-<script src="scripts/jquery-3.6.0.min.js"></script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
 <script type='text/javascript' src="scripts/main.js"></script>

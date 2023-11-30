@@ -1,14 +1,14 @@
-var buttn = document.getElementById('top');
+var topbutton = document.getElementById('top');
 
 window.onscroll = function() {scroll()};
 
 function scroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        buttn.style.opacity = 1;
-        buttn.style.cursor = 'pointer';
+        topbutton.style.opacity = 1;
+        topbutton.style.cursor = 'pointer';
     } else {
-        buttn.style.opacity = 0;
-        buttn.style.cursor = 'unset';
+        topbutton.style.opacity = 0;
+        topbutton.style.cursor = 'unset';
     }
 };
 
@@ -16,14 +16,14 @@ function toTop() {
     window.scrollTo(0, 0);
 }
 
-let audioarray = document.getElementsByTagName('audio')
+var audioarray = document.getElementsByTagName('audio')
 var cleaningfrenzystarted = false
 
-$(".soundbutton").mouseenter(function() {
+$(".pbutton").mouseenter(function() {
     audioarray[0].play();
 });
 
-$(".soundbutton").click(function() {
+$(".pbutton").click(function() {
     audioarray[1].play();
 });
 
@@ -31,11 +31,11 @@ function cleaningfrenzy() {
     if (cleaningfrenzystarted == true) {
         cleaningfrenzystarted = false
         document.getElementById("cleaningfrenzygame").src = "html/Cleaning_Frenzy_Empty.html"
-        document.getElementById("cleaningfrenzybutton").textContent = "Start Game"
+        document.getElementById("cleaningfrenzyplay").textContent = "Start Game"
     } else {
         cleaningfrenzystarted = true
         document.getElementById("cleaningfrenzygame").src = "html/Cleaning_Frenzy.html"
-        document.getElementById("cleaningfrenzybutton").textContent = "Stop Game"
+        document.getElementById("cleaningfrenzyplay").textContent = "Stop Game"
     }
 }
 
