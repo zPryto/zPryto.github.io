@@ -63,6 +63,16 @@ body {
     border-radius: 50%;
 }
 
+#botville {
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    image-rendering: pixelated;
+}
+
 h1 {
     text-transform: uppercase;
     color: hsl(0, 0%, 100%);
